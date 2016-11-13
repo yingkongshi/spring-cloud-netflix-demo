@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #uri: file:///usr/local/workspace/cloud-config-repo
+          uri: https://github.com/yingkongshi/spring-cloud-netflix-demo.git
+          search-paths: cloud-config-repo
+  application:
+    name: config-server
+  config:
+    name: config-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
