@@ -1,3 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: simple-client
+  cloud:
+    config:
+      profile: ${config.profile:debug}
+
 eureka:
   client:
     serviceUrl:
