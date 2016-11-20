@@ -19,7 +19,7 @@
 
 ## 2.配置与启动参数
 
-1.    ### /etc/hosts配置
+1. ### /etc/hosts配置
 
    为模拟eureka-server的集群模式，需启动两个eureka-server，需要在/etc/hosts中添加域名映射（IP可根据自己的机器做修改）
 
@@ -28,15 +28,15 @@
    192.168.182.129 peer2
    ```
 
-2.    ### 启动参数
+2. ### 启动参数
 
-      | 模块名称                 | 启动参数                           |
-      | -------------------- | ------------------------------ |
-      | eureka-server(peer1) | -Dspring.profiles.active=peer1 |
-      | eureka-server(peer2) | -Dspring.profiles.active=peer2 |
-      | config-server        | 无                              |
-      | simple-service       | 无                              |
-      | simple-client        | 无                              |
+   | 模块名称                 | 启动参数                           |
+   | -------------------- | ------------------------------ |
+   | eureka-server(peer1) | -Dspring.profiles.active=peer1 |
+   | eureka-server(peer2) | -Dspring.profiles.active=peer2 |
+   | config-server        | 无                              |
+   | simple-service       | 无                              |
+   | simple-client        | 无                              |
 
 
 ## 3.启动
