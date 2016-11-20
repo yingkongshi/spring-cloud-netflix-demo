@@ -1,16 +1,14 @@
 spring:
   application:
     name: eureka-server
+  profiles: peer1
       
 server:
   port: 8761
   
 eureka:
   instance:
-    hostname:localhost
-  server:
-    peerip:localhost
-    peerport:8762
+    hostname: peer1
   client:
     serviceUrl:
-      defaultZone: http://${eureka.server.peerip}:${eureka.server.peerport}/eureka/
+      defaultZone: http://peer2:8762/eureka/
