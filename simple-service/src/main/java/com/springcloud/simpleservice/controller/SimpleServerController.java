@@ -7,19 +7,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SimpleServerController {
 
-	@Value("${simple-service.name}")
-	private String name;
-	
-	public String getName() {
-		return name;
-	}
+  @Value("${simple-service.name}")
+  private String name;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	@RequestMapping("/hello")
-	public String hello() {
-		return "hello " + name;
-	}
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  @RequestMapping("/hello")
+  public String hello() {
+    return "hello " + name;
+  }
 }

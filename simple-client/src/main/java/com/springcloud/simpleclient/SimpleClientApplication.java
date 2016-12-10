@@ -11,12 +11,12 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @EnableCircuitBreaker
 public class SimpleClientApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(SimpleClientApplication.class, args);
-    }
-    
-    @Bean
-    public RestTemplate getRestTemplate() {
-    	 return new RestTemplate();
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(SimpleClientApplication.class, args);
+  }
+
+  @Bean
+  public RestTemplate getRestTemplate() {
+    return new RestTemplate();
+  }
 }

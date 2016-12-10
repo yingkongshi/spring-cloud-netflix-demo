@@ -8,11 +8,11 @@ import com.springcloud.simpleclient.service.SimpleClientService;
 
 @RestController
 public class SimpleClientController {
-	@Autowired
-	private SimpleClientService simpleClient;
-	
-	@RequestMapping("helloclient")
-	public String getHello(String name) {
-		return simpleClient.getHelloString();
-	}
+  @Autowired
+  private SimpleClientService simpleClient;
+
+  @RequestMapping("helloclient")
+  public String getHello(String name) {
+    return simpleClient.getHelloString();
+  }
 }
